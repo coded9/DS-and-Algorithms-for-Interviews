@@ -1,3 +1,4 @@
+#Code:
 ```
 /* package whatever; // don't place package name! */
 
@@ -8,6 +9,7 @@ import java.io.*;
 /* Name of the class has to be "Main" only if the class is public. */
 class Ideone
 {
+	
 	static void selectionSort(int arr1[],int n){
 		int i=0,j=0;
 			for(i=0;i<arr1.length-1;i++){
@@ -18,11 +20,11 @@ class Ideone
 					}
 					
 				}
-				    //System.out.print(min);
+				    
 					int temp = arr1[i];
 					arr1[i] = arr1[min];
 					arr1[min] = temp;
-				//	System.out.print(min);
+	
 				
 			}
 				for( i=0;i<arr1.length;i++){
@@ -38,8 +40,15 @@ class Ideone
 		}
 		
 		System.out.println();
-		System.out.println("### After sorting ###");
+		System.out.println("##### After sorting #####");
 		selectionSort(arr2,arr2.length);
-		```
+		
 	}
 }
+```
+
+#Explanation:
+-->Static method is used,because we can reference it without creating an object,because it belongs to the class(You shouldn't create a method inside main method)
+-->First for loop for indexing ith position
+-->Second for loop for finding the minimum element's position
+-->We swap the ith position of the array and minimum element's position so that we get the sorted subarray and unsorted subarray
