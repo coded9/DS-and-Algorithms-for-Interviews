@@ -1,3 +1,5 @@
+#Code:
+
 ````
 
 /* package whatever; // don't place package name! */
@@ -48,3 +50,10 @@ class Ideone
 }
 
 ```
+#Explanation:
+
+-->In bubble sort ,the highest element will be bubbled up in each pass.Pairwise swapping of elements takes place in each pass
+-->The first for loop is for passes
+-->The second for loop is for swapping the elements,it is up to n-k,because i+1th element will be out of bound.
+-->Flag value is to check if there are any swaps in the pass
+-->If there are no swaps in the pass,then the array is sorted.So we break out of the loop.
