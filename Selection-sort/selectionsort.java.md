@@ -49,6 +49,6 @@ class Ideone
 
 #Explanation:
 -->Static method is used,because we can reference it without creating an object,because it belongs to the class(You shouldn't create a method inside main method)
--->First for loop for indexing ith position
+-->First for loop for using ith position of the array
 -->Second for loop for finding the minimum element's position
 -->We swap the ith position of the array and minimum element's position so that we get the sorted subarray and unsorted subarray
