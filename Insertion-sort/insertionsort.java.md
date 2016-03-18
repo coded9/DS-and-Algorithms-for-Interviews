@@ -1,3 +1,4 @@
+#Code:
 ```
 
 /* package whatever; // don't place package name! */
@@ -40,3 +41,7 @@ class Ideone
 	}
 }
 ```
+#Explanation:
+-->Here we set values for value and hole using first element 
+-->we insert elements into sorted subarray from unsorted subarray
+-->Inner while loop is for inserting the value into the sorted array.
