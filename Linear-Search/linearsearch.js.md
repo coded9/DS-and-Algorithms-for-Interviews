@@ -1,6 +1,6 @@
 ```
 function linearSearch(arr){
-  var ele = prompt("Enter the element you want to search");
+  var ele = prompt("Enter the element you want to search"); //Prompting the user for input
   flag = false;
   var i;
   for(i=0;i<arr.length;i++){
