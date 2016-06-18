@@ -1,4 +1,4 @@
-Problem link -->here[https://www.hackerearth.com/practice/data-structures-1/string-manipulation-1/basics-2/tutorial/]
+Problem link -->[here](https://www.hackerearth.com/practice/data-structures-1/string-manipulation-1/basics-2/tutorial/)
 ```
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
