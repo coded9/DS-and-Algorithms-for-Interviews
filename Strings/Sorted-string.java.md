@@ -174,3 +174,57 @@ class TestClass {
     }
 }
 ```
+#Approach 4
+```
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Codechef
+{
+    public static void main(String[] args){
+	
+		Scanner sc = new Scanner(System.in);
+		
+		
+		int t=Integer.parseInt(sc.nextLine());
+		
+		for(int i = 0; i<t;i++){
+			
+			
+			String str=sc.nextLine();
+			Map<Character, Integer> map = new TreeMap<>();
+			
+			ArrayList<Character> list = new ArrayList<>();
+			
+			for(int j=0;j<str.length();j++){
+				char ch =str.charAt(j);
+				list.add(ch);
+				if(map.containsKey(ch)){
+					int val=map.get(ch);
+				map.put(str.charAt(j), ++val);}else map.put(ch, 1);
+			
+			
+			}
+			System.out.println(list);
+			list.sort(new Comparator<Character>() {
+ 
+			    @Override
+			    public int compare(Character o1, Character o2) {
+			    	int temp = map.get(o1) - map.get(o2);
+			    	if(temp!=0)return temp;
+			    	else return o1-o2;
+			       
+			    }
+			});
+				System.out.println(list);
+			for(int j=0;j<list.size();j++)System.out.print(list.get(j));
+			
+			System.out.println();
+		}
+	}
+}
+```
