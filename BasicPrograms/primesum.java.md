@@ -22,7 +22,7 @@ class TestClass {
           }
           for(j=2;j<=(int)Math.sqrt(1000000);j++){
               if(arr[j]){
-                  for(k=j;k*j<=1000000;k++){
+                  for(k=j;k*j<=1000000;k++){   //Sieve of Eratosthenes algorithm
                       arr[k*j] = false;
                   }
               }
